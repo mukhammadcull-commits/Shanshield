@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShanShield — Твой инструмент защиты</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-container">
+<header>
+<h1>🛡️ ShanShield</h1>
+<p>Локальные инструменты кибергигиены</p>
+</header>
+
+<main>
+<section class="card">
+<h3>Генератор паролей</h3>
+<div class="output-area" id="password-output">Нажмите "Создать"</div>
+<button onclick="generateSafePassword()" class="btn-primary">Создать надежный пароль</button>
+</section>
+
+<section class="card">
+<h3>Анализ пароля</h3>
+<input type="password" id="password-input" placeholder="Введите ваш пароль...">
+<div class="strength-meter"><div id="strength-bar"></div></div>
+<p id="strength-feedback" class="status-text">Введите пароль для оценки сложности</p>
+</section>
+
+<section class="card">
+<h3>Проверка ссылок (VirusTotal)</h3>
+<input type="text" id="url-input" placeholder="https://example.com">
+<button onclick="analyzeLink()" class="btn-secondary">Проверить в базах данных</button>
+<div id="url-feedback" class="feedback-box">Здесь появится результат проверки...</div>
+</section>
+</main>
+
+<footer>
+<p>© 2026 ShanShield Project • Без ИИ • 100% Приватно</p>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
